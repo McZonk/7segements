@@ -5,4 +5,4 @@ if [ -z "$PARAM" ]; then
 PARAM=0123456789
 fi
 
-llvm-gcc -w mini7digit.c && ./a.out $PARAM
+llvm-gcc -w -o 7digit 7digit.c && ./7digit $PARAM
