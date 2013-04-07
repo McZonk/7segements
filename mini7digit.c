@@ -6,17 +6,18 @@
  3
  */
 
-const char* T = "|O6VYNnX~^";
+#include <stdio.h>
 
 void line(char** a, int u, int v) {
 	char *c = a[1];
 	while(*c) {
-		int y = T[*c++-48]+1;
+		int y = ("|O6VYNnX~^")[*c++-48]+1;
 		
-		printf("%c", y & u ?   *T : 32);
-		printf("%c", y & v ?   '_' : 32);
-		printf("%c", y & u*2 ? *T : 32);
-		printf("%c", c[0] ?    ' ' : '\n');
+		printf("%c%c%c%c",
+			   y & u ?   '|' : 32,
+			   y & v ?   '_' : 32,
+			   y & u*2 ? '|' : 32,
+			   c[0] ?    ' ' : '\n');
 	}
 }
 
