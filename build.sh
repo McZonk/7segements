@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="|O6VYNnX~^"
+NAME="t!Zj+hx\$|l"
 
 PARAM=$1
 if [ -z "$PARAM" ]; then
