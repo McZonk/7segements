@@ -1,1 +1,1 @@
-main(int u,char**a){for(char*c,y;y=u;u*=8,puts(""))for(c=a[1];*c;)printf("%c%c%c ",(y="î$Ö¶<ºú&þ¾"[*c++-48])&u/2?33:32,y&u?95:32,y&u/4?33:32);}
+main(int u,char**a){for(char*c,y;y=u;u*=8,puts(""))for(c=a[1];y="î$Ö¶<ºú&þ¾"[*c-48],*c++;)printf("%c%c%c ",y&u/2?33:32,y&u?95:32,y&u/4?33:32);}
